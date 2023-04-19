@@ -1,0 +1,31 @@
+// Variables
+$card-image-width: 150px
+
+// Card image
+.card-image
+  object-fit: cover
+  object-position: center
+  width: $card-image-width
+
+// Card content
+.card-content
+  display: flex
+  flex-wrap: nowrap
+  padding: 16px
+  
+  // Card image container
+  .image-container
+    flex: 0 0 $card-image-width
+    margin-right: 16px
+
+  // Card title
+  mat-card-title
+    font-size: 20px
+  
+  // Card subtitle
+  mat-card-subtitle
+    font-size: 14px
+  
+  // Card content
+  mat-card-content
+    font-size: 16px

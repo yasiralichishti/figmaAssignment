@@ -1,0 +1,138 @@
+<div class="container-fluid borderrad m-2">
+    <div class="container">
+        <div class="row d-flex">
+            <div class="col-lg-2">
+                <mat-icon class="sidenavIcons">widgets</mat-icon>
+            </div>
+            <div class="col-lg-10">
+                <span>HOME</span>
+            </div>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="row colorgrey">
+            <p>home page description</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 pad-20">
+            <div class="cardd">
+                <div class="container pad-20">
+                    <div class="row">
+                        <div class="col-md-8">
+                        </div>
+                        <div class="col-md-2">
+                            <mat-icon class="sidenavIcons">shopping_cart</mat-icon>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h1 class="title">369</h1>
+                        <h5 class="title">total orders</h5>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 pad-20">
+            <div class="cardd">
+                <div class="container pad-20">
+                    <div class="row">
+                        <div class="col-md-8">
+                        </div>
+                        <div class="col-md-2">
+                            <mat-icon class="sidenavIcons">account_balance_wallet</mat-icon>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h1 class="title">360029</h1>
+                        <h5 class="title">total orders</h5>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 pad-20">
+            <div class="cardd">
+                <div class="container pad-20">
+                    <div class="row">
+                        <div class="col-md-8">
+                        </div>
+                        <div class="col-md-2">
+                            <mat-icon class="sidenavIcons">shopping_cart</mat-icon>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h1 class="title">369</h1>
+                        <h5 class="title">total orders</h5>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 pad-20">
+            <div class="cardd">
+                <div class="container pad-20">
+                    <div class="row">
+                        <div class="col-md-8">
+                        </div>
+                        <div class="col-md-2">
+                            <mat-icon class="sidenavIcons">person</mat-icon>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h1 class="title">369</h1>
+                        <h5 class="title">total orders</h5>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="container borderrad pad-20">
+    <div class="row">
+        <h2 class="title">blogs</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-3  pad" *ngFor="let item of posts | slice:0:4">
+            <img src="https://cms-cdn.placeholder.co/toronto_be6ed650f3.png?width=300" alt="" width="300">
+            <h3 class="title">
+                {{item.title}}
+            </h3>
+            <p class="description">{{item.body}}</p>
+        </div>
+
+    </div>
+</div>
+
+<style>
+    .borderrad {
+        border-radius: 12px;
+        background-color: white;
+    }
+
+    .pad-30 {
+        padding: 30px;
+    }
+
+    .pad-20 {
+        padding: 20px;
+    }
+
+    .cardd {
+        border: none;
+        background-color: white;
+    }
+</style>
+
+<!-- 
+    account_balance_wallet
+person
+
+-->

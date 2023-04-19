@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-2" *ngFor="let item of users">
+            <div class="card mx-auto" style="width: 14rem;">
+                <img src="https://i.pravatar.cc/300" class="card-img-top rounded-circle mx-auto d-block"
+                    alt="Profile Image">
+                <div class="card-body text-center">
+                    <h2 class="card-title">{{item.name}}</h2>
+                    <p class="card-text">{{item.username}}</p>
+                </div>
+                <div class="card-footer bg-white rounded-circle mx-auto d-block">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add 5 more cards here -->
+
+    </div>
+</div>
+
+
+<style>
+    img.card-img-top.rounded-circle.mx-auto.d-block {
+        padding: 22px;
+    }
+</style>
